@@ -1,0 +1,154 @@
+######### BUILDINGS
+file objects/buildings/1.obj
+name b1
+matrix 1.000000 0.000000 0.000000 -89.724380 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 69.700829 0.000000 0.000000 0.000000 1.000000
+poly texture 1 6
+texture images/tex/window.ppm
+
+file objects/buildings/2.obj
+name b2
+matrix 1.000000 0.000000 0.000000 4.534902 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 -94.442963 0.000000 0.000000 0.000000 1.000000
+poly texture 1 2
+texture images/tex/window.ppm
+
+file objects/buildings/3.obj
+name b3
+matrix 1.000000 0.000000 0.000000 -79.665192 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 -310.759857 0.000000 0.000000 0.000000 1.000000
+poly texture 1 -8
+texture images/tex/window3.ppm
+
+file objects/buildings/4.obj
+name b4
+matrix 1.000000 0.000000 0.000000 -151.483505 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 -101.378021 0.000000 0.000000 0.000000 1.000000
+poly texture 1 3
+texture images/tex/window2.ppm
+
+file objects/buildings/5.obj
+name b5
+matrix 1.000000 0.000000 0.000000 -16.747440 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 63.974461 0.000000 0.000000 0.000000 1.000000
+poly texture 1 4
+texture images/tex/window2.ppm
+
+
+
+######## GROUND
+add grid 1000 1000
+name ground
+rotate 90 1 0 0
+poly texture 30 30
+texture images/tex/stone.ppm
+
+
+
+
+
+########## CAMERA PATH
+begin draw
+-187.588806 0.000000 -239.755219
+-133.610413 0.000000 -223.879181
+-111.665726 0.000000 -186.813324
+-79.908226 0.000000 -165.697113
+-75.414795 0.000000 -142.431381
+-82.305672 0.000000 -92.109131
+-85.484802 0.000000 -37.041653
+-65.336739 0.000000 -0.434334
+-45.687973 0.000000 13.424652
+-8.467972 0.000000 13.459114
+37.204956 0.000000 -5.813461
+72.593063 0.000000 -14.103821
+104.314827 0.000000 -12.117661
+112.967720 0.000000 -41.284901
+113.544670 0.000000 -79.994431
+117.246689 0.000000 -192.555267
+114.627029 0.000000 -226.301392
+122.849327 0.000000 -247.871872
+end
+name camerapath
+bspline 20
+
+add cam
+name headCam
+add light
+name headLight
+light quadratic 0
+light linear 0.1
+light constant 0
+
+# create null lookat object
+add geo
+name null
+path null camerapath 0 10 0 1 5
+
+# set up path
+#path headCam camerapath 0 10 0 1 0 0 225
+#path headLight camerapath 0 0 0 1 0 0 225
+#lookat headCam null 0 225
+path headCam camerapath 0 10 0
+path headLight camerapath
+lookat headCam null
+
+
+########## SOLAR GRID 
+begin draw
+37.204956 0.000000 -5.813461
+72.593063 0.000000 -14.103821
+104.314827 0.000000 -12.117661
+112.967720 0.000000 -41.284901
+113.544670 0.000000 -79.994431
+117.246689 0.000000 -192.555267
+114.627029 0.000000 -226.301392
+122.849327 0.000000 -247.871872
+end
+name sidewalk
+bspline 3
+
+begin draw 
+0 20
+0 10
+0 0
+0 -10
+0 -20
+end
+name crossMe
+
+add grid 10 10
+rotate 90 1 0 0
+name g
+texture images/tex/metalStair.ppm
+
+s crossMe
+translate 72.593063 0.000000 -14.103821
+s sidewalk
+sweep crossMe
+ 
+copy g sidewalk geo align 
+name solarField
+children lookat null
+
+
+############ TRACKS
+begin draw
+-187.588806 0.000000 -239.755219
+-133.610413 0.000000 -223.879181
+-111.665726 0.000000 -186.813324
+-79.908226 0.000000 -165.697113
+-75.414795 0.000000 -142.431381
+-82.305672 0.000000 -92.109131
+-85.484802 0.000000 -37.041653
+-65.336739 0.000000 -0.434334
+-45.687973 0.000000 13.424652
+-8.467972 0.000000 13.459114
+end
+bspline 3
+name tracks
+
+add grid 0 0 1 4
+extrude 0 0 0 10
+compute
+name trackBox
+poly texture
+texture images/tex/wood.ppm
+
+copy trackBox tracks align
+
+disp none

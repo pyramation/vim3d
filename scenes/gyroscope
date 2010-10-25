@@ -1,0 +1,172 @@
+add ring 5 5 30
+m 0 0 -.5
+extrude 0 0 1
+name c1
+add circle .8 .8 20
+name c1l1
+m 5 0 0
+add circle .8 .8 20
+name c1l2
+m -5 0 0
+add circle .8 .8 20
+name c1l3
+m 0 -5 0
+add circle .8 .8 20
+name c1l4
+m 0 5 0
+obj child c1 c1l1
+obj child c1 c1l2
+obj child c1 c1l3
+obj child c1 c1l4
+
+add ring 8 8 30
+name c2
+m 0 0 -.5
+extrude 0 0 1
+add circle .8 .8 20
+name c2l1
+m 5.7 5.7 0
+add circle .8 .8 20
+name c2l2
+m -5.7 -5.7 0
+add circle .8 .8 20
+name c2l3
+m -5.7 5.7 0
+add circle .8 .8 20
+name c2l4
+m 5.7 -5.7 0
+obj child c2 c2l1
+obj child c2 c2l2
+obj child c2 c2l3
+obj child c2 c2l4
+
+add ring 11 11 30
+name c3
+m 0 0 -.5
+extrude 0 0 1
+add circle .8 .8 20
+name c3l1
+m 11 0 0
+add circle .8 .8 20
+name c3l2
+m -11 0 0
+add circle .8 .8 20
+name c3l3
+m 0 -11 0
+add circle .8 .8 20
+name c3l4
+m 0 11 0
+obj child c3 c3l1
+obj child c3 c3l2
+obj child c3 c3l3
+obj child c3 c3l4
+
+add ring 14 14 30
+name c4
+m 0 0 -.5
+extrude 0 0 1
+add circle .8 .8 20
+name c4l1
+m 9.9 9.9 0
+add circle .8 .8 20
+name c4l2
+m -9.9 -9.9 0
+add circle .8 .8 20
+name c4l3
+m -9.9 9.9 0
+add circle .8 .8 20
+name c4l4
+m 9.9 -9.9 0
+obj child c4 c4l1
+obj child c4 c4l2
+obj child c4 c4l3
+obj child c4 c4l4
+
+add ring 17 17 30
+name c5
+m 0 0 -.5
+extrude 0 0 1
+add circle .8 .8 20
+name c5l1
+m 17 0 0
+add circle .8 .8 20
+name c5l2
+m -17 0 0
+add circle .8 .8 20
+name c5l3
+m 0 -17 0
+add circle .8 .8 20
+name c5l4
+m 0 17 0
+obj child c5 c5l1
+obj child c5 c5l2
+obj child c5 c5l3
+obj child c5 c5l4
+
+add ring 21 21 30
+name c6
+m 0 0 -.5
+extrude 0 0 1
+add circle .8 .8 20
+name c6l1
+m 14.9 14.9 0
+add circle .8 .8 20
+name c6l2
+m -14.9 -14.9 0
+add circle .8 .8 20
+name c6l3
+m 14.9 -14.9 0
+add circle .8 .8 20
+name c6l4
+m -14.9 14.9 0
+obj child c6 c6l1
+obj child c6 c6l2
+obj child c6 c6l3
+obj child c6 c6l4
+
+s c2
+rotate 45 0 0 1
+s c3
+rotate 55 0 0 1
+s c4
+rotate 62 0 0 1
+s c5
+rotate 69 0 0 1
+s c6
+rotate 77 0 0 1
+
+rotate 45 0 0 1
+obj child c2 c1
+obj child c3 c2
+obj child c4 c3
+obj child c5 c4
+obj child c6 c5
+
+add light
+name colorLight
+diffuse .3 1 .2 1
+specular .3 1 .2 1
+position 23 2 0
+light constant 0.1
+light linear 0.0
+light quadradic 0.0
+
+s Cam0
+position -39 4.7 -7.1
+camera lookat -21 2.65 -.6
+up .03 1 .03
+
+load channel Channels/zeroToOne.chan
+name linear
+
+register c5 ry linear 2 720 -360
+register c4 ry linear -1 1440 -360
+register c3 ry linear .8 1080 540
+register c2 ry linear -.5 1880 0
+register c1 ry linear .6 2200 0
+
+disp wireframe
+disp axis
+disp ortho
+
+s c6

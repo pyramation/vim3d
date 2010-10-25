@@ -1,0 +1,24 @@
+# moving the ashtray around changes the position and color of the target ashtray
+
+
+o objects/ashtray.obj
+name geo
+translate 0 20 -30
+
+add geo
+name moveme
+
+ref moveme tx geo diffr 1 0.00392156863 0
+ref moveme ty geo diffg 1 0.00392156863 0
+ref moveme tz geo diffb 1 0.00392156863 0
+ref moveme tx geo tx 1 1 -10
+ref moveme tz geo tz 1 1 -10
+
+add light
+translate 0 30 0
+name l0
+
+ref geo tx l0 tx
+ref geo tz l0 tz
+
+s moveme

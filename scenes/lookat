@@ -1,0 +1,12 @@
+file objects/ashtray.obj
+name refme
+
+file objects/ashtray.obj
+name target
+
+ref refme tx target lookat 1 1 0
+
+add light
+translate 0 10 0
+
+select refme

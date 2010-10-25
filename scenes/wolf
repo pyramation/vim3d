@@ -1,0 +1,88 @@
+begin draw
+0 0 0
+0 0 80
+100 0 80
+100 0 0
+20 0 0
+20 0 60
+80 0 60
+80 0 20
+40 0 20
+40 0 40
+60 0 40
+end
+name hallway
+extrude 0 20 0
+poly texture 2 1
+texture images/tex/stone.ppm
+
+begin draw
+0 0 0
+0 0 80
+100 0 80
+100 0 0
+end
+name floor
+poly close
+poly texture 10 1
+texture images/tex/brick.ppm
+
+begin draw
+0 0 0
+0 0 80
+100 0 80
+100 0 0
+end
+name ceiling
+translate 0 20 0
+poly close
+poly texture
+texture images/tex/wood.ppm
+
+begin draw
+0 0 0
+0 0 0
+0 0 80
+100 0 80
+100 0 0
+20 0 0
+20 0 60
+80 0 60
+80 0 20
+40 0 20
+40 0 40
+60 0 40
+60 0 40
+end
+bspline 40
+name Path
+
+
+add light
+name colorLight
+diffuse 1 0 0 1
+position 23 2 0
+light constant 0.1
+light linear 0.0
+light quadradic 0.0
+
+
+# add light and cam
+add cam
+name headCam
+add light
+name headLight
+
+# create null lookat object
+add geo
+name null
+path null Path 0 10 0 1 5
+
+# set up path
+path headCam Path 0 10 0
+path headLight Path
+reference null pos headCam lookat 1 -1 0
+
+
+display none
+

@@ -1,0 +1,31 @@
+add cam
+name renderCam
+position 17.845837 26.321945 -38.120468
+camera lookat 15.155572 22.831070 -31.443937
+up 0.015374 0.996323 0.084284
+
+
+add grid 4
+poly centroid
+poly scale 60
+ambient 0.1 0.1 0.1 1
+reflection 0.8 0.8 0.8
+
+add sphere
+m 20 18 0
+diffuse 1 0 0 1
+ambient 0.1 0.1 0.1 1
+reflection 0.3 0.3 0.3
+
+add sphere
+m 0 18 0
+diffuse 1 0 0 1
+ambient 0.1 0.1 0.1 1
+reflection 0.3 0.3 0.3
+
+add light 
+m -11 31 -17
+
+add light 
+diffuse 1 0 0 1
+m 11 31 17

@@ -1,0 +1,104 @@
+load channel Channels/music.chan
+name music
+
+add cam
+name camera1
+position -44.513062 61.735260 -130.917892
+camera lookat -41.624115 58.313026 -124.288986
+up 0.030389 0.997971 0.055941
+matrix 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000
+
+add camera
+name camera2
+zNear 0.100000
+zFar 500.000000
+fovy 90.000000
+position 65.628799 78.038284 50.586319
+camera lookat 15.101230 39.538647 12.463808
+up 0.409955 0.723340 -0.555623
+matrix 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000
+
+add camera
+name camera3
+zNear 0.100000
+zFar 500.000000
+fovy 90.000000
+position -16.000000 10.000000 -16.000000
+camera lookat 0.000000 1.000000 0.000000
+up 0.000000 1.000000 0.000000
+matrix 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000
+
+
+
+file objects/vim3d.obj
+name vim3d
+rotate 270 0 1 0
+
+file objects/track.obj
+name shape
+compute
+
+begin draw
+-10 -10 -10
+-10 0 0
+30 0 0
+50 0 0
+70 40 0 
+100 130 30
+60 65 60
+30 30 70
+0 0 40
+0 50 30
+-50 60 10
+-70 70 0
+-100 100 -30
+-60 120 0
+-40 50 -60
+-20 30 -120
+40 -50 -60
+end
+bezier 30
+name path
+
+copy shape path align
+
+add geo
+name car
+
+path car path
+
+add grid 10
+poly scale 100
+name ground
+
+# add light and put it on the path
+add light
+diffuse 0 1 0 1
+translate 0 20 0
+light point
+light constant 0.5
+light linear 0.0
+light quadratic 0.0
+name l0
+
+path l0 path
+ref l0 tx l0 diffr 10 0.00392156863 0
+ref l0 ty l0 diffg 10 0.00392156863 0
+ref l0 tz l0 diffb 10 0.00392156863 0
+
+register vim3d ambr music 1 0.005
+
+display none
+
+view camera camera3
+Vexplore
+view camera camera1
+Sexplore
+view channel
+add camera 
+position -7.026279 5.177975 6.592035
+camera lookat -1.891464 4.41083 5.479784
+up 0.152906 0.966703 0.152906
+
+
+
