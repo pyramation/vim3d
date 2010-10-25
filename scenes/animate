@@ -1,4 +1,4 @@
-o objects/ashtray.obj
+add cube
 name ash
 
 add channel

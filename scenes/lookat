@@ -1,7 +1,7 @@
-file objects/ashtray.obj
+add cube
 name refme
 
-file objects/ashtray.obj
+add cube
 name target
 
 ref refme tx target lookat 1 1 0

@@ -1,7 +1,6 @@
-# moving the ashtray around changes the position and color of the target ashtray
+# moving the box around changes the position and color of the target box
 
-
-o objects/ashtray.obj
+add cube
 name geo
 translate 0 20 -30
 
