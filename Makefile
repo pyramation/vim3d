@@ -30,7 +30,7 @@ db: $(OBJFILES)
 debug: 
 	$(CC) *.cpp primitives/*.cpp -Wall -ggdb3 $(CFLAGS) -o $(PROGTARGET)
 
-// make search FUNC=normalize
+# make search FUNC=normalize
 search:
 	grep ${FUNC} *.cpp
 	grep ${FUNC} *.h
