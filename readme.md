@@ -30,9 +30,10 @@ there are some examples in the scenes folder, check those out to get started.
     ├── space
     └── wolf
 
-Syntax, and how-to: http://vim3D.com
 
 # Docs
+
+More docs to come, the basics are listed below, for more syntax, and how-to: http://vim3D.com
 
 ## basics
 
