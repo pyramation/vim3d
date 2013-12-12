@@ -38,5 +38,8 @@ search:
 lines:
 	wc *.cpp *.h
 
+init:
+	@mkdir -p obj/primitives
+
 clean:
 	@rm obj/*.o obj/primitives/*.o
