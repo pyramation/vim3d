@@ -1,0 +1,32 @@
+add camera
+name camera
+position 100 100 100
+
+
+begin draw
+-10 -10 -10
+-10 0 0
+30 0 0
+50 0 0
+70 40 0 
+100 130 30
+60 65 60
+30 30 70
+0 0 40
+0 50 30
+-50 60 10
+-70 70 0
+-100 100 -30
+-60 120 0
+-40 50 -60
+-20 30 -120
+40 -50 -60
+end
+bspline 5
+name mycurve
+
+# add the grid
+add grid 0 0 1 4
+extrude 0 0 0 10
+name mygrid
+copy mygrid mycurve geo align

@@ -13,7 +13,10 @@ example:
     
     vim3d scenes/lightsScene
 
-there are some examples in the scenes folder, check those out to get started.
+there are some examples in the `scenes/` folder, check those out to get started.
+
+![roomba](https://91c5ecdb0164d5b53221-86a2c79f9eb64e3688d1dc9e722e6715.ssl.cf1.rackcdn.com/6e5c0f9f3d19a4e63d00eae1bad38bfb-320x212.jpg)
+
 
     scenes/
     ├── animate
@@ -30,6 +33,60 @@ there are some examples in the scenes folder, check those out to get started.
     ├── space
     └── wolf
 
+## quickstart / mini tutorial
+
+open vim3d in the shell
+
+	vim3d
+
+![vim3d](https://91c5ecdb0164d5b53221-86a2c79f9eb64e3688d1dc9e722e6715.ssl.cf1.rackcdn.com/96a60a67b308017db901f97c19ac07ef-320x188.jpg)
+
+add camera
+	
+	add camera
+	position 100 100 100
+	
+hit `i` to go into insert mode
+	
+	i
+
+![lights](https://91c5ecdb0164d5b53221-86a2c79f9eb64e3688d1dc9e722e6715.ssl.cf1.rackcdn.com/0b7d38ea91417f002eb5436cf6871c43-480x266.jpg)
+
+you can jump orthogonal mode with `8`
+
+While in insert mode, hit the `l` key to cycle through different curve interpolation previews.
+
+press `enter` when finished
+
+Then enter command mode (press `:`)
+
+
+
+When finished drawing, to interpolate specify level of detail as the argument to `bezier`, `bezier2`, or `bspline`
+
+	bezier 5
+
+hit `u` to undo and try these:
+
+	bezier2 5
+	bspline 5
+
+name the object
+
+	name mycurve	
+
+	
+now add a add grid, and extrude it.
+	
+	add grid 0 0 1 4
+	extrude 0 0 0 10
+	name mygrid
+	
+now copy your rectangular box to the curve that you drew!
+	
+	copy mygrid mycurve geo align
+
+You can do animations, add lights, and also sorts of super cool transformations. Read the docs and check out the examples!
 
 # Docs
 
