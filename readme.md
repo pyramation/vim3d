@@ -1,6 +1,10 @@
 # vim3d
 
-## built and run
+Vim3D, a vi-style interface to 3D modeling and simulation built in C++ and OpenGL
+
+Many basic building tools are available through commands much like the ones used in unix which are accessed through the vi-style command line in the lower portion of the screen. The target users for this software are developers and engineers, in particular, people with an interest in computer science, creativity, visualization, and a love of the vi editor.
+
+## build and run
 
 #### 1 To get started clone `vim3d` and enter `vim3d/src/`
 
