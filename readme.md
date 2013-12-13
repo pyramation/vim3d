@@ -12,6 +12,8 @@
     make
     
 #### 3 Run `vim3d`
+
+You can run it locally, or copy it to your path
     
     ./vim3d
 
@@ -38,9 +40,9 @@ there are some examples in the `scenes/` folder, check those out to get started.
     ├── space
     └── wolf
 
-example:
-    
-    vim3d scenes/lightsScene
+for an example of loading a scene file, try this one
+   
+    vim3d scenes/demoday
 
 
 ## quickstart / mini tutorial
