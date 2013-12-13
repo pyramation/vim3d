@@ -53,10 +53,15 @@ open vim3d in the shell
 
 ![vim3d](https://91c5ecdb0164d5b53221-86a2c79f9eb64e3688d1dc9e722e6715.ssl.cf1.rackcdn.com/96a60a67b308017db901f97c19ac07ef-320x188.jpg)
 
-add camera
-	
-	add camera
-	position 100 100 100
+#### get familiar with the 2 camera hotkeys to move around!
+
+tumble is default behavior when mouse movement occurs. 
+
+press `x` to toggle zoom/tumble when mouse movement occurs
+
+press `z` to toggle pan/tumble when mouse movement occurs
+
+#### start to draw
 	
 hit `i` to go into insert mode
 	
@@ -95,6 +100,18 @@ now copy your rectangular box to the curve that you drew!
 	copy mygrid mycurve geo align
 
 You can do animations, add lights, and also sorts of super cool transformations. Read the docs and check out the examples!
+
+#### add a light
+
+	add light
+	diffuse 0 1 0 1
+
+#### split the window and add another camera
+	
+	Vexplore
+	
+	add camera	
+	position 100 100 100
 
 # Docs
 
