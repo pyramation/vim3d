@@ -73,7 +73,11 @@ you can toggle orthogonal mode with `8`
 
 While in insert mode, hit the `l` key to cycle through different curve interpolation previews.
 
-When finished drawing, press `enter`, and then enter command mode by pressing `:`
+When finished drawing, press `enter`.
+
+#### interpolations
+
+These are commands, you'll have to enter command mode by pressing `:`
 
 to interpolate specify level of detail as the argument to `bezier`, `bezier2`, or `bspline`
 
@@ -88,7 +92,8 @@ name the object
 
 	name mycurve	
 
-	
+#### creating a rectangular box and copying it to the curve
+
 now add a add grid, and extrude it.
 	
 	add grid 0 0 1 4
@@ -99,19 +104,17 @@ now copy your rectangular box to the curve that you drew!
 	
 	copy mygrid mycurve geo align
 
-You can do animations, add lights, and also sorts of super cool transformations. Read the docs and check out the examples!
-
-#### add a light
-
-	add light
-	diffuse 0 1 0 1
-
 #### split the window and add another camera
 	
 	Vexplore
 	
 	add camera	
 	position 100 100 100
+
+
+You can do animations, add lights, and also sorts of super cool transformations. Read the docs and check out the examples!
+
+
 
 # Docs
 
