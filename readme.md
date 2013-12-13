@@ -35,7 +35,50 @@ there are some examples in the scenes folder, check those out to get started.
 
 More docs to come, the basics are listed below, for more syntax, and how-to: http://vim3D.com
 
-## basics
+
+### hotkeys
+
+Here are a list of some of the keyboard commands (not vim3d commands) to toggle various features
+		
+#### workflow
+		
+    :		enter command mode
+	esc		exit command code
+	u		undo
+	v		redo
+	m		(hold) toggles moving tool
+
+#### view hotkeys
+
+	w		wireframe
+	o		orthogrid
+	2		top view
+	
+#### drawing
+	
+	i		insert new curve
+	8		toggle orthogonal snapping for drawing
+
+#### selection
+
+	j		select previous object
+	l		select next object
+
+#### display options (and writing to disk)
+
+	a		toggle lights display
+	t		toggle textures
+	s		smooth shading	
+
+	n		display lights as geometry
+	p		points display
+	5		toggle display lists on/off
+	6		toggle terminal display on/off
+	9		capture current frame buffer to disk
+	0		toggle display mode
+
+
+## basic commands
 
 ### Scenes
 
