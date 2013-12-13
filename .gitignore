@@ -1,2 +1,4 @@
 obj/
 vim3d
+.DS_Store
+dump

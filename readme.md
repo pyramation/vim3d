@@ -1,22 +1,27 @@
 # vim3d
 
-To get started:    
+## built and run
 
-    make init
+#### 1 To get started clone and enter repo
+
+	git clone https://github.com/pyramation/vim3d.git
+	cd vim3d
+
+#### 2 call `make` to build the binary
+
     make
-
-Usage: 
-
-    vim3d <sceneFile>
-
-example:
     
-    vim3d scenes/lightsScene
+#### 3 Run `vim3d`
+    
+    ./vim3d
+
+## usage
+
+    vim3d [sceneFile]
 
 there are some examples in the `scenes/` folder, check those out to get started.
 
 ![roomba](https://91c5ecdb0164d5b53221-86a2c79f9eb64e3688d1dc9e722e6715.ssl.cf1.rackcdn.com/6e5c0f9f3d19a4e63d00eae1bad38bfb-320x212.jpg)
-
 
     scenes/
     ├── animate
@@ -32,6 +37,11 @@ there are some examples in the `scenes/` folder, check those out to get started.
     ├── reflections
     ├── space
     └── wolf
+
+example:
+    
+    vim3d scenes/lightsScene
+
 
 ## quickstart / mini tutorial
 

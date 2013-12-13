@@ -17,10 +17,17 @@ else
 CFLAGS      := -lGL -lGLU -lglut -lpthread
 endif
 
+
+all: 
+	@echo lets begin
+	@mkdir -p obj/primitives
+	$(MAKE) $(PROGTARGET)
+
 $(PROGTARGET): $(OBJFILES)
 	$(CC) $^ $(CFLAGS) -o $(PROGTARGET)
 
-$(OBJDIR)/%.o: %.cpp $(HEADERS)
+$(OBJDIR)/%.o: $(MKDIR) %.cpp $(HEADERS)
+	@mkdir -p obj/primitives
 	$(CC) -Wall -c -o $@ $<
 
 db: $(OBJFILES)
@@ -38,8 +45,7 @@ search:
 lines:
 	wc *.cpp *.h
 
-init:
-	@mkdir -p obj/primitives
-
 clean:
-	@rm obj/*.o obj/primitives/*.o
+	@rm -f obj/*.o obj/primitives/*.o
+	@rm -f vim3d
+
