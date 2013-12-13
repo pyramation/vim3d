@@ -25,21 +25,6 @@ there are some examples in the `scenes/` folder, check those out to get started.
 
 ![roomba](https://91c5ecdb0164d5b53221-86a2c79f9eb64e3688d1dc9e722e6715.ssl.cf1.rackcdn.com/6e5c0f9f3d19a4e63d00eae1bad38bfb-320x212.jpg)
 
-    scenes/
-    ├── animate
-    ├── bscene
-    ├── colorRefs
-    ├── demoday
-    ├── demoday2
-    ├── demoday3
-    ├── demoday4
-    ├── gyroscope
-    ├── lightsScene
-    ├── lookat
-    ├── reflections
-    ├── space
-    └── wolf
-
 for an example of loading a scene file, try this one
    
     vim3d scenes/demoday
