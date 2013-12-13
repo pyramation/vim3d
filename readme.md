@@ -52,17 +52,13 @@ hit `i` to go into insert mode
 
 ![lights](https://91c5ecdb0164d5b53221-86a2c79f9eb64e3688d1dc9e722e6715.ssl.cf1.rackcdn.com/0b7d38ea91417f002eb5436cf6871c43-480x266.jpg)
 
-you can jump orthogonal mode with `8`
+you can toggle orthogonal mode with `8`
 
 While in insert mode, hit the `l` key to cycle through different curve interpolation previews.
 
-press `enter` when finished
+When finished drawing, press `enter`, and then enter command mode by pressing `:`
 
-Then enter command mode (press `:`)
-
-
-
-When finished drawing, to interpolate specify level of detail as the argument to `bezier`, `bezier2`, or `bspline`
+to interpolate specify level of detail as the argument to `bezier`, `bezier2`, or `bspline`
 
 	bezier 5
 
