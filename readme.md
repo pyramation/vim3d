@@ -47,6 +47,20 @@ More docs to come, the basics are listed below, for more syntax, and how-to: htt
 
 	save <sceneName>
 
+### Geometry Objects
+
+#### add a cube an assign it a name
+
+	add cube
+	name Geo0
+
+#### Basic Objects in Vim3D
+
+	add grid [<divisionsX> <divisionsZ> <step> <dx> <dz>]
+	add sphere
+	add cube
+	add circle
+
 ### Geometry Files
 
 #### Open an obj file
