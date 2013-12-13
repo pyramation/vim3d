@@ -4,22 +4,11 @@
 
 const float Point::ACTIVE_RADIUS = 1.1;
 
-Point::Point(float xpos=0.0, float ypos=0.0, float zpos=0.0) {
+Point::Point(float xpos, float ypos, float zpos) {
     x = xpos;
     y = ypos;
     z = zpos;
     active = false;
-}
-
-Point::Point(float xpos=0.0, float ypos=0.0) {
-    x = xpos;
-    y = ypos;
-    z = 0.0;
-    active = false;
-}
-
-Point::Point() {
-    Point(0.0,0.0,0.0);
 }
 
 float Point::length() {

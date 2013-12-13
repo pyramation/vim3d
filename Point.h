@@ -20,9 +20,7 @@ public:
 	float z;
 	bool active;
 
-    Point(float xpos, float ypos);	
-	Point(float xpos, float ypos, float zpos);	
-    Point();
+    Point(float xpos = 0.0, float ypos = 0.0, float zpos = 0.0);	
 
     float length();
     void normalize();
