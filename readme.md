@@ -2,10 +2,10 @@
 
 ## built and run
 
-#### 1 To get started clone and enter repo
+#### 1 To get started clone `vim3d` and enter `vim3d/src/`
 
 	git clone https://github.com/pyramation/vim3d.git
-	cd vim3d
+	cd vim3d/src
 
 #### 2 call `make` to build the binary
 

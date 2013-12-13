@@ -1,4 +1,6 @@
-obj/
+src/obj/
+src/vim3d
 vim3d
 .DS_Store
+src/dump
 dump

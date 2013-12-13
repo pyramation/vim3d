@@ -46,6 +46,6 @@ lines:
 	wc *.cpp *.h
 
 clean:
-	@rm -f obj/*.o obj/primitives/*.o
+	@rm -rf obj
 	@rm -f vim3d
 
