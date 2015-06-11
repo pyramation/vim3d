@@ -1,0 +1,13 @@
+view channel
+load channel Channels/music.chan
+name music
+Sexplore
+add sphere
+name sphere
+register sphere ty music 1 0.2 0 
+
+add light
+m 0 40 0
+
+s Cam0
+m -20 30 -20
