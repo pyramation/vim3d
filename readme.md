@@ -101,6 +101,15 @@ now copy your rectangular box to the curve that you drew!
 	position 100 100 100
 
 
+#### adding and moving objects
+
+	add cube
+
+press `m` to toggle move mode
+
+press `z` to toggle pan/tumble when mouse movement occurs
+
+
 You can do animations, add lights, and also sorts of super cool transformations. Read the docs and check out the examples!
 
 
