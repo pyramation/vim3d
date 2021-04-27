@@ -66,7 +66,7 @@ hit `i` to go into insert mode
 	i
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/545047/116325751-bf751400-a777-11eb-907c-33477bc26573.jpg">
+  <img src="https://user-images.githubusercontent.com/545047/116326601-aff6ca80-a779-11eb-8575-7223d58e62b0.jpg">
 </p>
 
 you can toggle orthogonal mode with `8`
