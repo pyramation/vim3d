@@ -27,7 +27,7 @@ You can run it locally, or copy it to your path
 
 there are some examples in the `scenes/` folder, check those out to get started.
 
-![roomba](https://91c5ecdb0164d5b53221-86a2c79f9eb64e3688d1dc9e722e6715.ssl.cf1.rackcdn.com/6e5c0f9f3d19a4e63d00eae1bad38bfb-320x212.jpg)
+![demo](https://user-images.githubusercontent.com/545047/116325535-3b229100-a777-11eb-904b-7e1953962fa1.jpg)
 
 for an example of loading a scene file, try this one
    
@@ -40,7 +40,7 @@ open vim3d in the shell
 
 	vim3d
 
-![vim3d](https://91c5ecdb0164d5b53221-86a2c79f9eb64e3688d1dc9e722e6715.ssl.cf1.rackcdn.com/96a60a67b308017db901f97c19ac07ef-320x188.jpg)
+![vim3d](https://user-images.githubusercontent.com/545047/116325531-38c03700-a777-11eb-9ec7-45262d1beb2a.jpg)
 
 #### get familiar with the 2 camera hotkeys to move around!
 
@@ -56,7 +56,7 @@ hit `i` to go into insert mode
 	
 	i
 
-![lights](https://91c5ecdb0164d5b53221-86a2c79f9eb64e3688d1dc9e722e6715.ssl.cf1.rackcdn.com/0b7d38ea91417f002eb5436cf6871c43-480x266.jpg)
+![lights](https://user-images.githubusercontent.com/545047/116325751-bf751400-a777-11eb-907c-33477bc26573.jpg)
 
 you can toggle orthogonal mode with `8`
 
