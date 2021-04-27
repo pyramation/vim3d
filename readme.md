@@ -27,7 +27,14 @@ You can run it locally, or copy it to your path
 
 there are some examples in the `scenes/` folder, check those out to get started.
 
-![demo](https://user-images.githubusercontent.com/545047/116325535-3b229100-a777-11eb-904b-7e1953962fa1.jpg)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/545047/116325858-06630980-a778-11eb-83ca-dea22267ad7c.gif">
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/545047/116325535-3b229100-a777-11eb-904b-7e1953962fa1.jpg">
+</p>
+
 
 for an example of loading a scene file, try this one
    
@@ -40,7 +47,9 @@ open vim3d in the shell
 
 	vim3d
 
-![vim3d](https://user-images.githubusercontent.com/545047/116325531-38c03700-a777-11eb-9ec7-45262d1beb2a.jpg)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/545047/116325531-38c03700-a777-11eb-9ec7-45262d1beb2a.jpg">
+</p>
 
 #### get familiar with the 2 camera hotkeys to move around!
 
@@ -56,7 +65,9 @@ hit `i` to go into insert mode
 	
 	i
 
-![lights](https://user-images.githubusercontent.com/545047/116325751-bf751400-a777-11eb-907c-33477bc26573.jpg)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/545047/116325751-bf751400-a777-11eb-907c-33477bc26573.jpg">
+</p>
 
 you can toggle orthogonal mode with `8`
 
