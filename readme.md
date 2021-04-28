@@ -66,7 +66,7 @@ hit `i` to go into insert mode
 	i
 
 <p align="center">
-  <img width="420" src="https://user-images.githubusercontent.com/545047/116326601-aff6ca80-a779-11eb-8575-7223d58e62b0.jpg">
+  <img src="https://user-images.githubusercontent.com/545047/116326601-aff6ca80-a779-11eb-8575-7223d58e62b0.jpg">
 </p>
 
 you can toggle orthogonal mode with `8`
@@ -91,6 +91,10 @@ hit `u` to undo and try these:
 name the object
 
 	name mycurve	
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/545047/116326795-25fb3180-a77a-11eb-820b-7897d7df06ba.png">
+</p>
 
 #### creating a rectangular box and copying it to the curve
 
